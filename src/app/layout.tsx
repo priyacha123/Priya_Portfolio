@@ -7,6 +7,7 @@ import { CommandPaletteProvider } from "@/components/command-palette/command-pal
 import { CommandPalette } from "@/components/command-palette/CommandPalette";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 // Three fonts, three jobs:
 // - Space Grotesk: headlines. Has character, used with restraint.
