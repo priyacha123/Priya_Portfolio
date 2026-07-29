@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light theme (default). Values are "R G B" — no commas, no # — because
+   Tailwind's opacity modifiers (bg-accent/50) need raw channel numbers. */
+:root {
+  --color-background: 250 250 250;
+  --color-surface: 244 244 245;
+  --color-card: 255 255 255;
+  --color-border: 228 228 231;
+  --color-text-primary: 10 10 10;
+  --color-text-secondary: 82 82 91;
+  --color-accent: 180 83 9;
+  --color-accent-muted: 146 64 14;
+  --color-status-ok: 22 163 74;
+  --color-status-error: 220 38 38;
+}
+
+/* Dark theme (our default terminal identity) — applied when next-themes
+   adds class="dark" to <html>. This is the original palette unchanged. */
+.dark {
+  --color-background: 10 10 10;
+  --color-surface: 17 17 17;
+  --color-card: 23 23 23;
+  --color-border: 38 38 38;
+  --color-text-primary: 250 250 250;
+  --color-text-secondary: 161 161 170;
+  --color-accent: 245 158 11;
+  --color-accent-muted: 180 83 9;
+  --color-status-ok: 34 197 94;
+  --color-status-error: 239 68 68;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-text-primary font-sans antialiased;
+  }
+
+  /* Visible keyboard focus everywhere — accessibility, non-negotiable */
+  :focus-visible {
+    outline: 2px solid theme("colors.accent");
+    outline-offset: 2px;
+  }
+
+  /* Respect people who've asked their OS to reduce motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

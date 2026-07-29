@@ -1,16 +1,55 @@
-# React + Vite
+# Priya Kumari — Portfolio (Phase 1: Setup)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What's in this zip
 
-Currently, two official plugins are available:
+A working Next.js + TypeScript + Tailwind project skeleton, with the
+color/font system already wired in. Nothing looks "designed" yet on
+purpose — Phase 1 is just proving the foundation runs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Run it locally — step by step
 
-## React Compiler
+1. **Install Node.js** (skip if you already have it)
+   Go to https://nodejs.org, download the "LTS" version, install it.
+   Confirm it worked by opening a terminal and running:
+   ```
+   node -v
+   ```
+   You should see something like `v20.x.x`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. **Unzip this project** anywhere on your computer, then open a
+   terminal inside that folder (in VS Code: right-click the folder →
+   "Open in Terminal").
 
-## Expanding the ESLint configuration
+3. **Install dependencies** — this downloads Next.js, React, Tailwind,
+   etc. into a `node_modules` folder:
+   ```
+   npm install
+   ```
+   This will take a minute or two the first time.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4. **Start the dev server**:
+   ```
+   npm run dev
+   ```
+
+5. Open **http://localhost:3000** in your browser. You should see a
+   black background, an amber "phase 1 — setup complete" label, and
+   your name in bold.
+
+If that's what you see — the whole foundation (Next.js, TypeScript,
+Tailwind, custom color tokens, custom fonts) is confirmed working, and
+we're ready for Phase 2.
+
+## Folder structure so far
+
+```
+src/
+└── app/
+    ├── layout.tsx     ← loads fonts, wraps every page
+    ├── page.tsx       ← the home page (placeholder for now)
+    └── globals.css    ← Tailwind + base styles
+tailwind.config.ts     ← our color palette & font names live here
+```
+
+More folders (`components/`, `features/`, `content/`, etc.) get added
+as we build each section — no need to create empty folders in advance.
