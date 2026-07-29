@@ -1,5 +1,5 @@
+import { GithubStats } from "@/components/about/GithubStats";
 import { Metadata } from "next";
-import { GithubStats } from "./GithubStats";
 
 export const metadata: Metadata = {
   title: "About",
