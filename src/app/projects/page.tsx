@@ -16,9 +16,9 @@ export default function ProjectsPage() {
         Projects
       </h1>
       <p className="mt-3 max-w-xl text-text-secondary">
-        Systems built to handle failure honestly — reconciled payments,
-        enforced rate limits, isolated tenants. Each one below is a full
-        case study, not just a screenshot.
+        Rate-limited SaaS infrastructure, tenant-isolated billing, and
+        agentic AI products — each one below is a full case study, not
+        just a screenshot.
       </p>
 
       <div className="mt-10 grid gap-6 sm:grid-cols-2">

@@ -10,11 +10,20 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     category: "Frontend",
-    skills: ["React", "Next.js", "Tailwind CSS", "GSAP"],
+    skills: [
+      "React",
+      "Next.js",
+      "Remix",
+      "Tailwind CSS",
+      "Radix UI",
+      "Headless UI",
+      "shadcn/ui",
+      "GSAP",
+    ],
   },
   {
     category: "Backend",
-    skills: ["Node.js", "Express.js", "JWT", "Socket.io", "FastAPI"],
+    skills: ["Node.js", "Express.js", "FastAPI"],
   },
   {
     category: "Databases & ORMs",
@@ -24,13 +33,34 @@ export const skillGroups: SkillGroup[] = [
       "MongoDB",
       "Redis",
       "Firebase Firestore",
+      "Supabase",
       "Prisma",
       "Drizzle ORM",
     ],
   },
   {
-    category: "APIs",
-    skills: ["RESTful APIs", "GraphQL"],
+    category: "Content & Rendering",
+    skills: ["MDX v2", "Markdown Processing", "Remark", "Rehype"],
+  },
+  {
+    category: "APIs & Auth",
+    skills: ["RESTful APIs", "GraphQL", "JWT", "Clerk", "Google OAuth"],
+  },
+  {
+    category: "AI & Third-party APIs",
+    skills: [
+      "Gemini API",
+      "Grok API",
+      "Google Text-to-Speech",
+      "AssemblyAI",
+      "ClipDrop",
+      "Google Maps API",
+      "Nominatim API",
+    ],
+  },
+  {
+    category: "Payments & Billing",
+    skills: ["Stripe", "Razorpay"],
   },
   {
     category: "Tools & Platforms",
@@ -39,10 +69,11 @@ export const skillGroups: SkillGroup[] = [
       "GitHub",
       "Vercel",
       "Netlify",
-      "Stripe",
-      "Clerk",
+      "Railway",
       "Cloudinary",
       "Resend",
+      "Firebase",
+      "Canva",
     ],
   },
 ];
